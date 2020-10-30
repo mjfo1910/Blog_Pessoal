@@ -1,0 +1,8 @@
+.parallax{
+    background-image: url('https://d30p9ca83oqyng.cloudfront.net/defesanet/site/upload/news_image/2019/10/45058_resize_620_380_true_false_null.jpg');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
