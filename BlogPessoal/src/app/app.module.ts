@@ -3,8 +3,6 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http'
 import { FormsModule } from '@angular/forms';
 import { OrderModule } from 'ngx-order-pipe';
-
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -15,14 +13,13 @@ import { FeedComponent } from './feed/feed.component';
 import { PerfilLateralComponent } from './perfil-lateral/perfil-lateral.component';
 import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
-import { PassadoComponent } from './passado/passado.component';
-import { PresenteComponent } from './presente/presente.component';
-import { ExpectativasComponent } from './expectativas/expectativas.component';
 import { PostTemaComponent } from './post-tema/post-tema.component';
 import { PutPostagemComponent } from './put-postagem/put-postagem.component';
 import { PutTemaComponent } from './put-tema/put-tema.component';
 import { DeletePostagemComponent } from './delete-postagem/delete-postagem.component';
 import { DeleteTemaComponent } from './delete-tema/delete-tema.component';
+import { AlertasComponent } from './alertas/alertas.component';
+import{ ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -34,14 +31,12 @@ import { DeleteTemaComponent } from './delete-tema/delete-tema.component';
     PerfilLateralComponent,
     LoginComponent,
     CadastroComponent,
-    PassadoComponent,
-    PresenteComponent,
-    ExpectativasComponent,
     PostTemaComponent,
     PutPostagemComponent,
     PutTemaComponent,
     DeletePostagemComponent,
-    DeleteTemaComponent
+    DeleteTemaComponent,
+    AlertasComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +44,8 @@ import { DeleteTemaComponent } from './delete-tema/delete-tema.component';
     FontAwesomeModule,
     HttpClientModule,
     FormsModule,
-    OrderModule
+    OrderModule,
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
